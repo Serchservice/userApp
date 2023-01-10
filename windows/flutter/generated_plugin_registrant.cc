@@ -35,4 +35,7 @@ void RegisterPlugins(flutter::PluginRegistry* registry) {
   SharePlusWindowsPluginCApiRegisterWithRegistrar(
       registry->GetRegistrarForPlugin("SharePlusWindowsPluginCApi"));
   UrlLauncherWindowsRegisterWithRegistrar(
-      registry->GetRegistrarFo
+      registry->GetRegistrarForPlugin("UrlLauncherWindows"));
+  ZegoExpressEnginePluginRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("ZegoExpressEnginePlugin"));
+}
